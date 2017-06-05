@@ -5,16 +5,16 @@ package com.example;
  */
 
 public class Pacient {
-    private User oseba;
+    private Oseba oseba;
     private String problem;
     private Lokacija dom;
 
-    public Pacient(User Nova_oseba, String opis, Lokacija Dom){
+    public Pacient(Oseba Nova_oseba, String opis, Lokacija Dom){
         this.dom=Dom;
         this.problem=opis;
         this.oseba=Nova_oseba;
     }
-    public void setOseba(User Nova_oseba){
+    public void setOseba(Oseba Nova_oseba){
         this.oseba=Nova_oseba;
     }
     public void setProblem(String opis){
@@ -23,7 +23,7 @@ public class Pacient {
     public void setDom(Lokacija lokacija){
         this.dom=lokacija;
     }
-    public User getOseba(){
+    public Oseba getOseba(){
         return this.oseba;
     }
     public String getProblem(){
